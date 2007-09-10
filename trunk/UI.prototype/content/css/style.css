@@ -11,8 +11,8 @@ body {
 #container {
 	background-image: url('../images/sidebarBg.gif');
 	background-repeat: repeat-y;
-	width:80%;
-	margin:0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 #masthead {
 	width: 100%;
@@ -146,8 +146,40 @@ table.form th, table.form td {
 table.form th {
 	font-weight: normal;
 	background-color: #EBEBEB;
-	padding:0 12px;
+	padding: 0 12px;
+}
+table.form td{
+	height:26px;
+	overflow:auto;
 }
 table.form tfoot td {
 	text-align: center;
+}
+/* Styles for list */
+table.list {
+	border: 1px solid #C0C0C0;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.list th, table.list td {
+	border: 1px solid #C0C0C0;
+	border-style: solid none;
+	text-indent: 12px;
+}
+table.list th {
+	font-weight: normal;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	background-color: #EBEBEB;
+}
+table.list tfoot td {
+	text-align: right;
+	height: 20px;
+	line-height: 20px;
+}
+.btnBar{
+	height:24px;
+	line-height:24px;
+	text-align:right;
 }

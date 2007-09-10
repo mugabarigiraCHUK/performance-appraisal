@@ -33,6 +33,7 @@ body {
 #content {
 	margin-left: 140px;
 	padding: 10px;
+	display:inline-block; /* little trick to get around IE6 floating problem*/
 }
 #footer {
 	clear: both;

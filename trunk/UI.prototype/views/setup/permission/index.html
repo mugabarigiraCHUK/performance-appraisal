@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- #BeginEditable "doctitle" -->
-<title>用户管理</title>
+<title>权限管理</title>
 <!-- #EndEditable -->
 <link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../../../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
@@ -50,8 +50,8 @@
 		<div id="sidebar">
 			<ul>
 				<li><a href="../organization/index.html">组织机构管理</a></li>
-				<li><a href="index.html">用户管理</a></li>
-				<li><a href="../permission/index.html">权限管理</a></li>
+				<li><a href="../user/index.html">用户管理</a></li>
+				<li><a href="index.html">权限管理</a></li>
 				<li><a href="../examinationStandard/index.html">考核标准管理</a></li>
 				<li><a href="../table/index.html" style="color:red">表单定义</a></li>
 				<li><a href="../task/index.html">任务定义</a></li>
@@ -65,38 +65,53 @@
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-				<table class="form" width="60%">
+			<table class="list">
+				<caption>角色列表</caption>
+				<thead>
 					<tr>
-						<th>姓名</th>
-						<td><input name="Text1" type="text" /></td>
+						<th>角色名称</th>
+						<th>权重</th>
+						<th></th>
 					</tr>
-					<tr>
-						<th>所属机构</th>
-						<td></td>
-					</tr>
-					<tr>
-						<th>登陆代码</th>
-						<td><input name="Text1" type="text" /></td>
-					</tr>
-					<tr>
-						<th>身份证号码</th>
-						<td><input name="Checkbox1" type="text" /></td>
-					</tr>
-					<tr>
-						<th>岗位角色</th>
-						<td><input name="Checkbox1" type="text" /></td>
-					</tr>
-					<tr>
-						<th>环境权重</th>
-						<td><input name="Checkbox1" type="text" /></td>
-					</tr>
-					<tfoot>
+				</thead>
+				<tfoot>
 						<tr>
-							<td colspan="2">
-							<input name="Submit1" type="submit" value="保存" /><input name="Reset1" type="reset" value="重置" /></td>
+							<td colspan="5"><a href="#" onclick="return false;">
+							上一页 </a><a href="#" onclick="return false;">下一页</a></td>
 						</tr>
-					</tfoot>
-				</table>
+				</tfoot>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+				<tr>
+					<td>#####</td>
+					<td>##</td>
+					<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+				</tr>
+			</table>
+			<div class="btnBar"><a href="edit.html">新增</a></div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>
 	</div>

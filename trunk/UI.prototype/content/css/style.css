@@ -1,33 +1,32 @@
-﻿@import url('layout.css');
-html {
+﻿html {
 	overflow: auto;
 }
 body {
-	font-family: Arial, sans-serif;
-	font-size: medium;
 	color: #000;
+	font-family: Arial, sans-serif;
 	font-size: 12px;
+	margin: 0;
+	padding: 0;
 }
 #container {
-	width: 100%;
 	background-image: url('../images/sidebarBg.gif');
 	background-repeat: repeat-y;
+	width:80%;
+	margin:0 auto;
 }
 #masthead {
 	width: 100%;
-	overflow: auto;
-	text-align: right;
+	overflow: auto; /*automatically adjust its height based on its float descendants */;
 	background-color: #c5d5e5;
 }
 #navigation {
 	background-color: #ca7;
-	overflow: hidden;
+	overflow: auto;
 }
 #page_content {
-	position: relative;
+	overflow: auto; /*automatically adjust its height based on its float descendants */
 }
 #sidebar {
-	position: relative;
 	float: left;
 	width: 140px;
 }
@@ -134,4 +133,21 @@ a:hover {
 }
 .style_italic {
 	font-style: italic;
+}
+/* Styles for form */
+table.form {
+	border: 1px solid #C0C0C0;
+	border-collapse: collapse;
+}
+table.form th, table.form td {
+	border: 1px solid #C0C0C0;
+	border-style: solid none;
+}
+table.form th {
+	font-weight: normal;
+	background-color: #EBEBEB;
+	padding:0 12px;
+}
+table.form tfoot td {
+	text-align: center;
 }

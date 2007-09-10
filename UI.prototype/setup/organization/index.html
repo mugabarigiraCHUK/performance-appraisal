@@ -10,14 +10,15 @@
 <!-- #EndEditable -->
 <link href="../../content/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
+<!-- TODO clean the script references -->
 <script type="text/javascript" src="../../content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../content/libraries/jquery/jquery.treeview.pack.js"></script>
 <script type="text/javascript" src="../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
-<script type="text/javascript" src="../../content/libraries/prototype/prototype.js"></script>
-<script type="text/javascript" src="../../content/libraries/yui/yahoo/yahoo-min.js"></script>
-<script type="text/javascript" src="../../content/libraries/yui/event/event-min.js"></script>
-<script type="text/javascript" src="../../content/libraries/yui/treeview/treeview-min.js"></script>
 <script type="text/javascript" src="../../content/libraries/silverStripe/tree/tree.js"></script>
+<!--<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
+<script type="text/javascript" src="content/libraries/yui/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="content/libraries/yui/event/event-min.js"></script>
+<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>-->
 </head>
 
 <body>
@@ -65,23 +66,17 @@
 		<div id="content">
 			<!-- #BeginEditable "content" -->
 			<!-- put here just for convenience -->
-			<script type="text/javascript">
-				$j(document).ready(function(){
-					//$j(".treeview").Treeview();
-					//(new YAHOO.widget.TreeView("tyu")).draw();
-				});
-			</script>
+			<!-- TODO move css definitions into another file -->
 			<style type="text/css">
-				#organTree{
-					float:left;
-					width:200px;
-					position:relative;
-				}
-				#organForm{
-					margin-left:200px;
-					display:inline-block;/* hack for IE6 */
-				}
-			</style>
+#organTree {
+	float: left;
+	width: 200px;
+}
+#organForm {
+	margin-left: 200px;
+	display: inline-block;/* hack for IE6 */
+}
+</style>
 			<div id="organTree">
 				<ul class="tree">
 					<li>市局<ul>
@@ -104,39 +99,40 @@
 				</ul>
 			</div>
 			<div id="organForm">
-				<table style="width: 100%">
+				<div>
+					<input name="Submit1" type="submit" value="新增" /><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" />
+				</div>
+				<table class="form">
 					<tr>
-						<td>机构名称</td>
+						<th>机构名称</th>
 						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<td>上级机构代码</td>
+						<th>上级机构代码</th>
 						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<td>机构代码</td>
+						<th>机构代码</th>
 						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<td>申诉部门否</td>
+						<th>申诉部门否</th>
 						<td><input name="Checkbox1" type="checkbox" /></td>
 					</tr>
 					<tr>
-						<td>考核部门否</td>
+						<th>考核部门否</th>
 						<td><input name="Checkbox1" type="checkbox" /></td>
 					</tr>
 					<tr>
-						<td>描述</td>
+						<th>描述</th>
 						<td><textarea name="TextArea1" cols="20" rows="2"></textarea></td>
 					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
+					<tfoot>
+						<tr>
+							<td colspan="2">
+							<input name="Submit1" type="submit" value="保存" /><input name="Reset1" type="reset" value="重置" /></td>
+						</tr>
+					</tfoot>
 				</table>
 			</div>
 			<!-- #EndEditable -->

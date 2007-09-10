@@ -8,14 +8,15 @@
 <!-- #EndEditable -->
 <link href="content/css/style.css" rel="stylesheet" type="text/css" />
 <link href="content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
+<!-- TODO clean the script references -->
 <script type="text/javascript" src="content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="content/libraries/jquery/jquery.treeview.pack.js"></script>
 <script type="text/javascript" src="content/libraries/jquery/jquery.prototype.noconflict.js"></script>
-<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
+<script type="text/javascript" src="content/libraries/silverStripe/tree/tree.js"></script>
+<!--<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
 <script type="text/javascript" src="content/libraries/yui/yahoo/yahoo-min.js"></script>
 <script type="text/javascript" src="content/libraries/yui/event/event-min.js"></script>
-<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>
-<script type="text/javascript" src="content/libraries/silverStripe/tree/tree.js"></script>
+<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>-->
 </head>
 
 <body>

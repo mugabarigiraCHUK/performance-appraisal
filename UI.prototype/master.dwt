@@ -57,8 +57,7 @@
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-			<h2>Headline 2</h2>
-			<p>insert content here</p>
+			pub contents here
 			<!-- #EndEditable -->
 			<!-- End Content --></div>
 	</div>

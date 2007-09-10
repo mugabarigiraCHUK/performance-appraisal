@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- #BeginEditable "doctitle" -->
-<title>用户管理</title>
+<title>考核标准管理</title>
 <!-- #EndEditable -->
 <link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../../../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
@@ -50,9 +50,9 @@
 		<div id="sidebar">
 			<ul>
 				<li><a href="../organization/index.html">组织机构管理</a></li>
-				<li><a href="index.html">用户管理</a></li>
+				<li><a href="../user/index.html">用户管理</a></li>
 				<li><a href="../permission/index.html">权限管理</a></li>
-				<li><a href="../examinationStandard/index.html">考核标准管理</a></li>
+				<li><a href="index.html">考核标准管理</a></li>
 				<li><a href="../table/index.html" style="color:red">表单定义</a></li>
 				<li><a href="../task/index.html">任务定义</a></li>
 				<li><a href="../evaluationStandard/index.html">评估标准管理</a></li>
@@ -65,30 +65,81 @@
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-				<table class="form" width="60%">
+			<style type="text/css">
+#examStandardTree {
+	float: left;
+	width: 200px;
+}
+#examStandardForm{
+	margin-left: 200px;
+	display: inline-block;/* hack for IE6 */
+}
+</style>
+			<div id="examStandardTree">
+				<ul class="tree">
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+					<li class="closed"><a href="#" onclick="return false;" class="current">标准分类</a><ul>
+						<li>标准</li>
+						<li>标准</li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="examStandardForm">
+				<div class="btnBar">
+					<input name="Submit1" type="submit" value="修改" />
+				</div>
+				<table class="form" width="100%">
 					<tr>
-						<th>姓名</th>
+						<th>考核内容</th>
 						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<th>所属机构</th>
-						<td></td>
-					</tr>
-					<tr>
-						<th>登陆代码</th>
+						<th>上级考核</th>
 						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<th>身份证号码</th>
-						<td><input name="Checkbox1" type="text" /></td>
+						<th>权重</th>
+						<td><input name="Text1" type="text" /></td>
 					</tr>
 					<tr>
-						<th>岗位角色</th>
-						<td><input name="Checkbox1" type="text" /></td>
+						<th>下级权重独立否</th>
+						<td><input name="Checkbox1" type="checkbox" /></td>
 					</tr>
 					<tr>
-						<th>环境权重</th>
-						<td><input name="Checkbox1" type="text" /></td>
+						<th>描述</th>
+						<td><textarea name="TextArea1" cols="20" rows="2"></textarea></td>
 					</tr>
 					<tfoot>
 						<tr>
@@ -97,6 +148,7 @@
 						</tr>
 					</tfoot>
 				</table>
+			</div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>
 	</div>

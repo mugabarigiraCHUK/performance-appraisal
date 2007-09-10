@@ -70,8 +70,7 @@
 		<div id="content">
 			<!-- #ParentBeginEditable "content" -->
 			<!-- #BeginEditable "content" -->
-			<h2>Headline 2</h2>
-			<p>insert content here</p>
+			put contents here
 			<!-- #EndEditable -->
 			<!-- #ParentEndEditable -->
 			<!-- End Content --></div>

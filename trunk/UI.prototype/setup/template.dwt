@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<!-- #BeginTemplate "../master.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #ParentBeginEditable "doctitle" -->
+<!-- #BeginEditable "doctitle" -->
+<title>芜湖市公安局绩效管理系统</title>
+<!-- #EndEditable -->
+<!-- #ParentEndEditable -->
+<link href="../content/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../content/libraries/jquery/jquery.js"></script>
+<script type="text/javascript" src="../content/libraries/jquery/jquery.treeview.pack.js"></script>
+<script type="text/javascript" src="../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
+<script type="text/javascript" src="../content/libraries/prototype/prototype.js"></script>
+<script type="text/javascript" src="../content/libraries/yui/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="../content/libraries/yui/event/event-min.js"></script>
+<script type="text/javascript" src="../content/libraries/yui/treeview/treeview-min.js"></script>
+<script type="text/javascript" src="../content/libraries/silverStripe/tree/tree.js"></script>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<img src="../content/images/logo.gif" alt="" height="66" width="150" />
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+		<ul>
+			<li><a href="#" onclick="return false;" class="current">系统维护</a></li>
+			<li><a href="../about/about.htm">部门考核定义</a></li>
+			<li><a href="../news/news.htm">任务分派</a></li>
+			<li><a href="../products/products.htm">考核管理</a></li>
+			<li><a href="../services/services.htm">警员日常工作</a></li>
+			<li><a href="../calendar/calendar.htm">情报处理</a></li>
+			<li><a href="../contact/contact.htm">统计分析</a></li>
+			<li><a href="#" onclick="return false;">退出系统</a></li>
+		</ul>
+	</div>
+	<!-- End Navigation -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebar">
+			<!-- #ParentBeginEditable "siderbar" -->
+			<ul>
+				<li><a href="organization/index.html">组织机构管理</a></li>
+				<li><a href="user/index.html">用户管理</a></li>
+				<li><a href="permission/index.html">权限管理</a></li>
+				<li><a href="examinationStandard/index.html">考核标准管理</a></li>
+				<li><a href="table/index.html">表单定义</a></li>
+				<li><a href="task/index.html">任务定义</a></li>
+				<li><a href="evaluationStandard/index.html">评估标准管理</a></li>
+				<li><a href="#" onclick="return false">基础资料管理</a></li>
+				<li><a href="kpi/index.html">KPI指标定义</a></li>
+				<li><a href="config/index.html">系统参数配置</a></li>
+			</ul>
+			<!-- #ParentEndEditable -->
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		<div id="content">
+			<!-- #ParentBeginEditable "content" -->
+			<!-- #BeginEditable "content" -->
+			<h2>Headline 2</h2>
+			<p>insert content here</p>
+			<!-- #EndEditable -->
+			<!-- #ParentEndEditable -->
+			<!-- End Content --></div>
+	</div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>Copyright © 2007 安徽瑞信软件公司版权所有。</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<!-- #BeginTemplate "../template.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #BeginEditable "doctitle" -->
+<title>系统量表定义</title>
+<!-- #EndEditable -->
+<link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../../../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../../content/libraries/jquery/accordion/css.css" />
+<link rel="stylesheet" type="text/css" href="../../../content/libraries/jquery/tab/jquery.tabs.css" />
+<!-- TODO clean the script references -->
+<script type="text/javascript" src="../../../content/libraries/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
+<script type="text/javascript" src="../../../content/libraries/silverStripe/tree/tree.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/tab/jquery.tabs.pack.js"></script>
+<!--<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
+<script type="text/javascript" src="content/libraries/yui/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="content/libraries/yui/event/event-min.js"></script>
+<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>-->
+<script type="text/javascript">
+$j(document).ready(function(){
+	$j("ul.menu").Accordion({ 
+	    active: '.selected', 
+	    header: '.head', 
+	    navigation: true, 
+	    event: 'click', 
+	    autoheight: true, 
+	    animated: false
+	});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<h1>芜湖市公安局绩效考核管理系统</h1>
+		<div class="logout">
+			<a href="#" onclick="return false">退出</a></div>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebar">
+			<ul class="menu">
+				<li><a href="#" onclick="return false;" class="head selected">系统维护</a><ul>
+					<li><a href="../organization/index.html">组织机构管理</a></li>
+					<li><a href="../user/index.html">用户管理</a></li>
+					<li><a href="../permission/index.html">权限管理</a></li>
+					<li><a href="../examinationStandard/index.html">考核标准管理</a></li>
+					<li>
+					<a href="../table/index.html" style="color: red">表单定义</a></li>
+					<li><a href="../routineTask/index.html">系统常规任务定义</a></li>
+					<li><a href="index.html">系统量表定义</a></li>
+					<li><a href="../taskEvalStandard/index.html">任务评估标准</a></li>					
+					<li><a href="../keyEventEvalStandard/index.html">关键事件评估标准</a></li>
+					<li><a href="../dictionary/routineTaskCategoryList.html">基础资料管理</a></li>
+					<li><a href="../yearlyExamination/index.html">年度考期管理</a></li>
+					<li><a href="../interface/index.html">接口定义</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">部门考核定义</a><ul>
+					<li>
+					<a href="../../../examinationDefinition/routineTask/index.html">常规任务</a></li>
+					<li>
+					<a href="../../../examinationDefinition/dynamicTask/index.html">动态任务树</a></li>
+					<li>
+					<a href="../../../examinationDefinition/keyEvent/index.html">关键事件项</a></li>
+					<li>
+					<a href="../../../examinationDefinition/individualQuality/index.html">
+					个人素质</a></li>
+					<li>
+					<a href="../../../examinationDefinition/serviceTarget/index.html">服务对象</a></li>
+					<li>
+					<a href="../../../examinationDefinition/mutualReview/index.html">
+					互评</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">任务分派</a></li>
+				<li><a href="#" onclick="return false;" class="head">考核管理</a></li>
+				<li><a href="#" onclick="return false;" class="head">警员日常工作</a></li>
+				<li><a href="#" onclick="return false;" class="head">情报处理</a></li>
+				<li><a href="#" onclick="return false;" class="head">统计分析</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+			<table class="form" width="100%">
+				<tr>
+					<th>量表名称</th>
+					<td><input name="Text1" type="text" /></td>
+				</tr>
+				<tr>
+					<th>量表类别</th>
+					<td><select name="Select1">
+					<option>####</option>
+					<option>####</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>描述</th>
+					<td><textarea name="TextArea1" cols="20" rows="2"></textarea></td>
+				</tr>
+				<tr>
+					<th>KPI指标</th>
+					<td><select name="Select1">
+					<option>####</option>
+					<option>####</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>量表项</th>
+					<td>
+					<table class="list">
+						<thead>
+							<tr>
+								<th>项目（评估结果名称）</th>
+								<th>权重（标准分）</th>
+							</tr>
+						</thead>
+						<tr><td><input name="Text1" type="text" /></td><td><input name="Text1" type="text" /></td></tr>
+						<tr><td><input name="Text1" type="text" /></td><td><input name="Text1" type="text" /></td></tr>
+						<tr><td><input name="Text1" type="text" /></td><td><input name="Text1" type="text" /></td></tr>
+						<tr><td><input name="Text1" type="text" /></td><td><input name="Text1" type="text" /></td></tr>
+						<tr><td><input name="Text1" type="text" /></td><td><input name="Text1" type="text" /></td></tr>
+					</table>
+					</td>
+				</tr>
+				<tfoot>
+					<tr>
+						<td colspan="2">
+						<input name="Submit1" type="submit" value="保存" /><input name="Reset1" type="reset" value="重置" /></td>
+					</tr>
+				</tfoot>
+			</table>
+			<!-- #EndEditable -->
+			<!-- End Content --></div>
+	</div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>Copyright © 2007 安徽瑞信软件公司版权所有。</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

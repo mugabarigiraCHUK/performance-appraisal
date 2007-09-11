@@ -8,6 +8,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
+a {
+	color: #393939;
+	text-decoration: underline;
+}
+a:hover {
+	color: #78a;
+	text-decoration: underline;
+}
 #container {
 	background-image: url('../images/sidebarBg.gif');
 	background-repeat: repeat-y;
@@ -60,9 +68,6 @@ body {
 	right: 1em;
 	bottom: 0.5em;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: Arial Black;
-}
 /* Styles for Siderbar Navigation */
 #sidebar li {
 	margin: 1px 0;
@@ -76,15 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 #sidebar a.head {
 	color: #393939;
 	background-color: #ca7;
-	height: 20px;
-	line-height: 20px;
+	height: 24px;
+	line-height: 24px;
 	text-indent: 1.5em;
 }
 #sidebar li li a {
 	color: #393939;
 	background-color: #CCFFCC;
-	height: 18px;
-	line-height: 18px;
+	height: 20px;
+	line-height: 20px;
 	text-indent: 1em;
 }
 /* Styles for Footer */
@@ -99,20 +104,6 @@ h1, h2, h3, h4, h5, h6 {
 #footer a:hover {
 	color: #393939;
 	text-decoration: none;
-}
-a {
-	color: #393939;
-	text-decoration: underline;
-}
-a:hover {
-	color: #78a;
-	text-decoration: underline;
-}
-.style_bold {
-	font-weight: bold;
-}
-.style_italic {
-	font-style: italic;
 }
 /* Styles for form */
 table.form {
@@ -158,8 +149,27 @@ table.list tfoot td {
 	height: 20px;
 	line-height: 20px;
 }
+/* Other Styles */
 .btnBar {
 	height: 24px;
 	line-height: 24px;
 	text-align: right;
+}
+/* Styles for submenu and subcontent */
+#submenu {
+	width: 180px;
+	float: left;
+}
+#submenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+	list-style-type: circle;
+}
+#submenu a {
+	text-decoration: none;
+}
+#subcontent {
+	margin-left: 200px;
+	display: inline-block;
 }

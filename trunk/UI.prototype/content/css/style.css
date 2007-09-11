@@ -18,6 +18,7 @@ body {
 	width: 100%;
 	overflow: auto; /*automatically adjust its height based on its float descendants */;
 	background-color: #c5d5e5;
+	position: relative;
 }
 #navigation {
 	font-family: 宋体;
@@ -29,10 +30,10 @@ body {
 }
 #sidebar {
 	float: left;
-	width: 140px;
+	width: 150px;
 }
 #content {
-	margin-left: 140px;
+	margin-left: 150px;
 	padding: 10px;
 	display: inline-block; /* little trick to get around IE6 floating problem*/
 }
@@ -54,61 +55,37 @@ body {
 	margin: 0;
 	margin-right: 1%;
 }
+#masthead .logout {
+	position: absolute;
+	right: 1em;
+	bottom: 0.5em;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: Arial Black;
 }
-/* Styles for Top Navigation */
-#navigation ul {
-	list-style-type: none;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-#navigation li {
-	float: left;
-}
-#navigation a {
-	color: #393939;
-	text-decoration: none;
-	display: block;
-	padding: 5px 8px;
-	border: 1px solid #ca7;
-	background-color: #dc8;
-	font-weight: bold;
-	white-space:nowrap;
-}
-#navigation a:hover {
-	border: 1px solid #ed9;
-	background-color: #ed9;
-}
-#navigation a.current {
-	border-color: #ed9;
-	color: navy;
-}
 /* Styles for Siderbar Navigation */
-#sidebar ul {
-	list-style-type: none;
-	width: 100%;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
 #sidebar li {
-	display: block;
-	border: 1px solid #cb8;
+	margin: 1px 0;
 }
 #sidebar a {
 	text-decoration: none;
-	color: #393939;
-	padding: 5%;
-	display: block;
-	border-bottom: 1px solid #f5f5f5;
 }
 #sidebar a:hover {
-	text-decoration: none;
-	color: #393939;
-	border-bottom: 1px solid #f5f5f5;
 	background-color: #dc9;
+}
+#sidebar a.head {
+	color: #393939;
+	background-color: #ca7;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 1.5em;
+}
+#sidebar li li a {
+	color: #393939;
+	background-color: #CCFFCC;
+	height: 18px;
+	line-height: 18px;
+	text-indent: 1em;
 }
 /* Styles for Footer */
 #footer p {

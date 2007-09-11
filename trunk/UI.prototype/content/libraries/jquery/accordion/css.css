@@ -1,0 +1,18 @@
+﻿.menu, .menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+.menu a {
+	display: block;
+}
+.menu a.head {
+	cursor: pointer;
+	background: #5263AB url(collapsed.gif) no-repeat scroll 3px 50%;
+}
+.menu a.selected {
+	background-image: url(expanded.gif);
+}
+.menu a.current {
+	background-color: blue;
+}

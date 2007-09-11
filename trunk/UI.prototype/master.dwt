@@ -29,6 +29,7 @@
 	</div>
 	<!-- End Masthead -->
 	<!-- Begin Navigation -->
+	<!-- #BeginEditable "navigation" -->
 	<div id="navigation">
 		<ul>
 			<li><a href="#" onclick="return false;" class="current">系统维护</a></li>
@@ -41,6 +42,7 @@
 			<li><a href="#" onclick="return false;">退出系统</a></li>
 		</ul>
 	</div>
+	<!-- #EndEditable -->
 	<!-- End Navigation -->
 	<!-- Begin Page Content -->
 	<div id="page_content">

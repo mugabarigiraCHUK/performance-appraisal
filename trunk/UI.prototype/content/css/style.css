@@ -20,6 +20,7 @@ body {
 	background-color: #c5d5e5;
 }
 #navigation {
+	font-family: 宋体;
 	background-color: #ca7;
 	overflow: auto;
 }
@@ -33,7 +34,7 @@ body {
 #content {
 	margin-left: 140px;
 	padding: 10px;
-	display:inline-block; /* little trick to get around IE6 floating problem*/
+	display: inline-block; /* little trick to get around IE6 floating problem*/
 }
 #footer {
 	clear: both;
@@ -74,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid #ca7;
 	background-color: #dc8;
 	font-weight: bold;
+	white-space:nowrap;
 }
 #navigation a:hover {
 	border: 1px solid #ed9;
@@ -149,9 +151,9 @@ table.form th {
 	background-color: #EBEBEB;
 	padding: 0 12px;
 }
-table.form td{
-	height:26px;
-	overflow:auto;
+table.form td {
+	height: 26px;
+	overflow: auto;
 }
 table.form tfoot td {
 	text-align: center;
@@ -179,8 +181,8 @@ table.list tfoot td {
 	height: 20px;
 	line-height: 20px;
 }
-.btnBar{
-	height:24px;
-	line-height:24px;
-	text-align:right;
+.btnBar {
+	height: 24px;
+	line-height: 24px;
+	text-align: right;
 }

@@ -128,6 +128,7 @@ table.form th {
 	font-weight: normal;
 	background-color: #EBEBEB;
 	padding: 0 12px;
+	width:35%;
 }
 table.form td {
 	height: 26px;
@@ -182,4 +183,15 @@ table.list tfoot td {
 #subcontent {
 	margin-left: 200px;
 	display: inline-block;
+}
+.split{
+	overflow:auto;
+}
+.split .left{
+	float:left;
+	width:150px;
+}
+.split .right{
+	margin-left:160px;
+	display:inline-block;
 }

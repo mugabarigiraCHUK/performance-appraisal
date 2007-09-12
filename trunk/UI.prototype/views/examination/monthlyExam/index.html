@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<!-- #BeginTemplate "../../../master.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #BeginEditable "doctitle" -->
+<title>月考核</title>
+<!-- #EndEditable -->
+<link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../../content/libraries/jquery/accordion/css.css" />
+<link href="../../../content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../../content/libraries/yui/tabview/assets/skins/sam/tabview.css" />
+<script type="text/javascript" src="../../../content/libraries/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="../../../content/libraries/silverStripe/tree/tree.js"></script>
+<script type="text/javascript" src="../../../content/libraries/yui/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="../../../content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="../../../content/libraries/yui/element/element-beta-min.js"></script>
+<script type="text/javascript" src="../../../content/libraries/yui/tabview/tabview-min.js"></script>
+<!-- TODO clean head section -->
+<!--
+<link rel="stylesheet" type="text/css" href="content/libraries/jquery/tab/jquery.tabs.css" />
+<script type="text/javascript" src="content/libraries/jquery/tab/jquery.tabs.pack.js"></script>
+<script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
+<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
+<script type="text/javascript" src="content/libraries/yui/event/event-min.js"></script>
+<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>
+-->
+<!-- TODO move this into another file -->
+<script type="text/javascript">
+$j(document).ready(function(){
+	$j("ul.menu").Accordion({ 
+	    active: '.selected', 
+	    header: '.head', 
+	    navigation: true, 
+	    event: 'click', 
+	    autoheight: true, 
+	    animated: false
+	});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<h1>芜湖市公安局绩效考核管理系统</h1>
+		<div class="logout">
+			<a href="#" onclick="return false">退出</a></div>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebar">
+			<ul class="menu">
+				<li><a href="#" onclick="return false;" class="head selected">系统维护</a><ul>
+					<li><a href="../../setup/organization/index.html">组织机构管理</a></li>
+					<li><a href="../../setup/user/index.html">用户管理</a></li>
+					<li><a href="../../setup/permission/index.html">权限管理</a></li>
+					<li><a href="../../setup/examinationStandard/index.html">考核标准管理</a></li>
+					<li>
+					<a href="../../setup/table/index.html" style="color: red">表单定义</a></li>
+					<li><a href="../../setup/routineTask/index.html">系统常规任务定义</a></li>
+					<li><a href="../../setup/measurementTable/index.html">系统量表定义</a></li>
+					<li><a href="../../setup/taskEvalStandard/index.html">任务评估标准</a></li>
+					<li><a href="../../setup/keyEventEvalStandard/index.html">关键事件评估标准</a></li>
+					<li>
+					<a href="../../setup/dictionary/routineTaskCategoryList.html">
+					基础资料管理</a></li>
+					<li><a href="../../setup/yearlyExamination/index.html">年度考期管理</a></li>
+					<li><a href="../../setup/interface/index.html">接口定义</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">部门考核定义</a><ul>
+					<li>
+					<a href="../../examinationDefinition/routineTask/index.html">
+					常规任务</a></li>
+					<li>
+					<a href="../../examinationDefinition/dynamicTask/index.html">
+					动态任务树</a></li>
+					<li>
+					<a href="../../examinationDefinition/keyEvent/index.html">关键事件项</a></li>
+					<li>
+					<a href="../../examinationDefinition/individualQuality/index.html">
+					个人素质</a></li>
+					<li>
+					<a href="../../examinationDefinition/serviceTarget/index.html">
+					服务对象</a></li>
+					<li>
+					<a href="../../examinationDefinition/mutualReview/index.html">
+					互评</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">任务分派</a><ul>
+					<li><a href="../../taskAllocation/routineTask/index.html">常规任务分派</a></li>
+					<li><a href="../../taskAllocation/dynamicTask/index.html">动态任务分派</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">考核管理</a><ul>
+					<li><a href="index.html">月考核</a></li>
+					<li><a href="../weeklyEval/index.html">周评估</a></li>
+					<li><a href="../staffManagement/index.html">人员管理</a></li>
+					<li><a href="../windowManagement/index.html">
+					期间管理</a></li>
+					<li><a href="../examQuery/index.html">考核查询</a></li>
+					<li>
+					<a href="../mutualReviewQuery/index.html">互评查询</a></li>
+					<li><a href="../weeklySumUpQuery/index.html">
+					周小结查询</a></li>
+					<li><a href="#" style="color: red">日清检查</a></li>
+					<li><a href="../yearlyExam/index.html">年度考核</a></li>
+				</ul>
+				</li>
+				<li><a href="#" onclick="return false;" class="head">警员日常工作</a><ul>
+					<li><a href="">常规任务</a></li>
+					<li><a href="">动态任务</a></li>
+					<li><a href="">关键事件</a></li>
+					<li><a href="">个人素质</a></li>
+					<li><a href="">互评</a></li>
+					<li><a href="">周小结</a></li>
+					<li><a href="">个考查询</a></li>
+					<li><a href="">指导查询</a></li>
+					<li><a href="">日清查询</a></li>
+					<li><a href="">警员申诉</a></li>
+					<li><a href="">警员加班</a></li>
+					<li><a href="">警员离岗</a></li>
+				</ul></li>
+				<li><a href="#" onclick="return false;" class="head">情报处理</a></li>
+				<li><a href="#" onclick="return false;" class="head">统计分析</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+			<script type="text/javascript">
+			$j(document).ready(function(){
+				new YAHOO.widget.TabView('resultTabs');
+			});
+			</script>
+			<div id="monthlyExam" class="yui-skin-sam">
+				<div id="condition">
+					<p><label>考核对象</label><select>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					<option>###########</option>
+					</select></p>
+					<p><label>考核月份</label><select>
+					<option>2007-10</option>
+					<option>2007-09</option>
+					<option>2007-08</option>
+					</select></p>
+					<input type="submit" value="开始月度考核" /> </div>
+				<div class="split">
+					<div class="left">
+						<fieldset>
+						<legend>考核结果</legend>
+						<dl>
+							<dt>月份</dt>
+							<dd>2007-10</dd>
+							<dt>业绩分</dt>
+							<dd>##</dd>
+							<dt>素质分</dt>
+							<dd>##</dd>
+							<dt>群众评估</dt>
+							<dd>##</dd>
+							<dt>总分</dt>
+							<dd>##</dd>
+						</dl>
+						</fieldset> </div>
+					<div id="resultTabs" class="yui-navset right">
+						<ul class="yui-nav">
+							<li class="selected"><a href="#routineTask"><em>常规任务</em></a></li>
+							<li><a href="#dynamicTask"><em>动态任务</em></a></li>
+							<li><a href="#keyEvent"><em>关键事件</em></a></li>
+							<li><a href="#individualQuality"><em>个人素质</em></a></li>
+							<li><a href="#serviceTarget"><em>服务对象</em></a></li>
+						</ul>
+						<div class="yui-content">
+							<div id="routineTask">
+								<table class="list">
+									<thead>
+										<tr>
+											<th>常规任务大类</th>
+											<th>标题</th>
+											<th>年任务计划量</th>
+											<th>月任务计划量</th>
+											<th>实际完成量</th>
+											<th>耗时</th>
+											<th>领导评估</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="7"><a href="#">上一页</a><a href="#">下一页</a></td>
+										</tr>
+									</tfoot>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+								</table>
+							</div>
+							<div id="dynamicTask">
+								<table class="list">
+									<thead>
+										<tr>
+											<th>常规任务大类</th>
+											<th>标题</th>
+											<th>年任务计划量</th>
+											<th>月任务计划量</th>
+											<th>任务等级</th>
+											<th>实际说明</th>
+											<th>耗时</th>
+											<th>领导评估</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="8"><a href="#">上一页</a><a href="#">下一页</a></td>
+										</tr>
+									</tfoot>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+								</table>
+							</div>
+							<div id="keyEvent">
+								<table class="list">
+									<thead>
+										<tr>
+											<th>通用任务大类</th>
+											<th>标题</th>
+											<th>描述</th>
+											<th>录入人</th>
+											<th>录入时间</th>
+											<th>领导评估</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="6"><a href="#">上一页</a><a href="#">下一页</a></td>
+										</tr>
+									</tfoot>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+								</table>
+							</div>
+							<div id="individualQuality">
+								<table class="list">
+									<thead>
+										<tr>
+											<th>项目</th>
+											<th>描述</th>
+											<th>自评</th>
+											<th>领导评估</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="4"><a href="#">上一页</a><a href="#">下一页</a></td>
+										</tr>
+									</tfoot>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+								</table>
+							</div>
+							<div id="serviceTarget">
+								<table class="list">
+									<thead>
+										<tr>
+											<th>项目</th>
+											<th>描述</th>
+											<th>领导评估</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="3"><a href="#">上一页</a><a href="#">下一页</a></td>
+										</tr>
+									</tfoot>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+									<tr>
+										<td>#####</td>
+										<td>#####</td>
+										<td><select><option>######</option><option>######</option><option>######</option></select></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #EndEditable -->
+			<!-- End Content --></div>
+	</div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>Copyright © 2007 安徽瑞信软件公司版权所有。</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

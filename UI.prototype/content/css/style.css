@@ -8,6 +8,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+legend {
+	color: #0046d5;
+}
 a {
 	color: #393939;
 	text-decoration: underline;
@@ -27,16 +30,16 @@ a:hover {
 	height: 66px;
 	overflow: auto; /*automatically adjust its height based on its float descendants */;
 	background-color: #c5d5e5;
-	background-image:url('../images/logo.gif');
-	background-repeat:no-repeat;
+	background-image: url('../images/logo.gif');
+	background-repeat: no-repeat;
 	position: relative;
 }
-#masthead h1{
-	margin:0;
-	height:66px;
-	line-height:66px;
-	float:left;
-	text-indent:180px;
+#masthead h1 {
+	margin: 0;
+	height: 66px;
+	line-height: 66px;
+	float: left;
+	text-indent: 180px;
 }
 #navigation {
 	font-family: 宋体;
@@ -54,6 +57,9 @@ a:hover {
 	margin-left: 150px;
 	padding: 10px;
 	display: inline-block; /* little trick to get around IE6 floating problem*/
+}
+* > #content {
+	display: block;
 }
 #footer {
 	clear: both;
@@ -102,6 +108,10 @@ a:hover {
 	line-height: 20px;
 	text-indent: 1em;
 }
+#sidebar li li a.current {
+	background: #66FF66;
+	color: black;
+}
 /* Styles for Footer */
 #footer p {
 	font-size: x-small;
@@ -128,7 +138,7 @@ table.form th {
 	font-weight: normal;
 	background-color: #EBEBEB;
 	padding: 0 12px;
-	width:35%;
+	width: 35%;
 }
 table.form td {
 	height: 26px;
@@ -166,6 +176,34 @@ table.list tfoot td {
 	line-height: 24px;
 	text-align: right;
 }
+/* Styles for monthlyExam */
+#monthlyExam #condition {
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: solid 1px gray;
+}
+#monthlyExam #condition p {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#monthlyExam #condition label {
+	margin: 0 1em;
+}
+#monthlyExam fieldset dt, #monthlyExam fieldset dd {
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+#monthlyExam fieldset dt {
+	clear: left;
+}
+#monthlyExam fieldset dd {
+	text-align: right;
+}
 /* Styles for submenu and subcontent */
 #submenu {
 	width: 180px;
@@ -184,14 +222,20 @@ table.list tfoot td {
 	margin-left: 200px;
 	display: inline-block;
 }
-.split{
-	overflow:auto;
+* > #subcontent {
+	display: block;
 }
-.split .left{
-	float:left;
-	width:150px;
+.split {
+	overflow: auto;
 }
-.split .right{
-	margin-left:160px;
-	display:inline-block;
+.split .left {
+	float: left;
+	width: 150px;
+}
+.split .right {
+	margin-left: 160px;
+	display: inline-block;
+}
+* > .split .right{
+	display: block;
 }

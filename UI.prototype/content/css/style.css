@@ -22,7 +22,7 @@ a:hover {
 #container {
 	background-image: url('../images/sidebarBg.gif');
 	background-repeat: repeat-y;
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 #masthead {
@@ -176,21 +176,21 @@ table.list tfoot td {
 	line-height: 24px;
 	text-align: right;
 }
-/* Styles for monthlyExam */
-#monthlyExam #condition {
-	padding-bottom: 0.5em;
-	margin-bottom: 1em;
-	border-bottom: solid 1px gray;
+/* Styles for topBar */
+.topBar{
+	padding-bottom:0.5em;
+	margin-bottom:0.5em;
+	border-bottom:solid 1px gray;
 }
-#monthlyExam #condition p {
-	margin: 0;
-	padding: 0;
-	float: left;
+.topBar p{
+	margin:0;
+	float:left;	
 }
-#monthlyExam #condition label {
-	margin: 0 1em;
+.topBar label{
+	margin:0 1em;
 }
-#monthlyExam fieldset dt, #monthlyExam fieldset dd {
+/* Styles for summary */
+fieldset.summary dt, fieldset.summary dd {
 	height: 20px;
 	line-height: 20px;
 	float: left;
@@ -198,10 +198,10 @@ table.list tfoot td {
 	padding: 0;
 	width: 50%;
 }
-#monthlyExam fieldset dt {
+fieldset.summary dt {
 	clear: left;
 }
-#monthlyExam fieldset dd {
+fieldset.summary dd {
 	text-align: right;
 }
 /* Styles for submenu and subcontent */

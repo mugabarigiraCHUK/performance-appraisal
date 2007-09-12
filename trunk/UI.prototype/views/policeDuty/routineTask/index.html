@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- #BeginEditable "doctitle" -->
-<title>人员管理</title>
+<title>常规任务</title>
 <!-- #EndEditable -->
 <link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../../../content/libraries/jquery/accordion/css.css" />
@@ -61,20 +61,30 @@ $j(document).ready(function(){
 		<div id="sidebar">
 			<ul class="menu">
 				<li><a href="#" onclick="return false;" class="head selected">系统维护</a><ul>
-					<li><a href="../../setup/organization/index.html">组织机构管理</a></li>
-					<li><a href="../../setup/user/index.html">用户管理</a></li>
-					<li><a href="../../setup/permission/index.html">权限管理</a></li>
-					<li><a href="../../setup/examinationStandard/index.html">考核标准管理</a></li>
+					<li>
+					<a href="../../setup/organization/index.html">组织机构管理</a></li>
+					<li>
+					<a href="../../setup/user/index.html">用户管理</a></li>
+					<li>
+					<a href="../../setup/permission/index.html">权限管理</a></li>
+					<li>
+					<a href="../../setup/examinationStandard/index.html">考核标准管理</a></li>
 					<li>
 					<a href="../../setup/table/index.html" style="color: red">表单定义</a></li>
-					<li><a href="../../setup/routineTask/index.html">系统常规任务定义</a></li>
-					<li><a href="../../setup/measurementTable/index.html">系统量表定义</a></li>
-					<li><a href="../../setup/taskEvalStandard/index.html">任务评估标准</a></li>
-					<li><a href="../../setup/keyEventEvalStandard/index.html">关键事件评估标准</a></li>
+					<li>
+					<a href="../../setup/routineTask/index.html">系统常规任务定义</a></li>
+					<li>
+					<a href="../../setup/measurementTable/index.html">系统量表定义</a></li>
+					<li>
+					<a href="../../setup/taskEvalStandard/index.html">任务评估标准</a></li>
+					<li>
+					<a href="../../setup/keyEventEvalStandard/index.html">关键事件评估标准</a></li>
 					<li>
 					<a href="../../setup/dictionary/routineTaskCategoryList.html">基础资料管理</a></li>
-					<li><a href="../../setup/yearlyExamination/index.html">年度考期管理</a></li>
-					<li><a href="../../setup/interface/index.html">接口定义</a></li>
+					<li>
+					<a href="../../setup/yearlyExamination/index.html">年度考期管理</a></li>
+					<li>
+					<a href="../../setup/interface/index.html">接口定义</a></li>
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">部门考核定义</a><ul>
@@ -93,24 +103,35 @@ $j(document).ready(function(){
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">任务分派</a><ul>
-					<li><a href="../../taskAllocation/routineTask/index.html">常规任务分派</a></li>
-					<li><a href="../../taskAllocation/dynamicTask/index.html">动态任务分派</a></li>
+					<li>
+					<a href="../../taskAllocation/routineTask/index.html">常规任务分派</a></li>
+					<li>
+					<a href="../../taskAllocation/dynamicTask/index.html">动态任务分派</a></li>
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">考核管理</a><ul>
-					<li><a href="../monthlyExam/index.html">月考核</a></li>
-					<li><a href="../weeklyEval/index.html">周评估</a></li>
-					<li><a href="index.html">人员管理</a></li>
-					<li><a href="../windowManagement/index.html">期间管理</a></li>
-					<li><a href="../examQuery/index.html">考核查询</a></li>
-					<li><a href="../mutualReviewQuery/index.html">互评查询</a></li>
-					<li><a href="../weeklySumUpQuery/index.html">周小结查询</a></li>
+					<li>
+					<a href="../../examination/monthlyExam/index.html">月考核</a></li>
+					<li>
+					<a href="../../examination/weeklyEval/index.html">周评估</a></li>
+					<li>
+					<a href="../../examination/staffManagement/index.html">人员管理</a></li>
+					<li>
+					<a href="../../examination/windowManagement/index.html">期间管理</a></li>
+					<li>
+					<a href="../../examination/examQuery/index.html">考核查询</a></li>
+					<li>
+					<a href="../../examination/mutualReviewQuery/index.html">互评查询</a></li>
+					<li>
+					<a href="../../examination/weeklySumUpQuery/index.html">周小结查询</a></li>
 					<li><a href="#" style="color: red">日清检查</a></li>
-					<li><a href="../yearlyExam/index.html">年度考核</a></li>
+					<li>
+					<a href="../../examination/yearlyExam/index.html">年度考核</a></li>
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">警员日常工作</a><ul>
-					<li><a href="../../policeDuty/routineTask/index.html">常规任务</a></li>
+					<li>
+					<a href="index.html">常规任务</a></li>
 					<li><a href="#">动态任务</a></li>
 					<li><a href="#">关键事件</a></li>
 					<li><a href="#">个人素质</a></li>
@@ -131,83 +152,80 @@ $j(document).ready(function(){
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-			<table class="list">
-				<caption>未参加考核人员列表</caption>
-				<thead>
+			<div class="topBar">
+				<p><label>考核月份</label><select>
+				<option>2007-10</option>
+				<option>2007-09</option>
+				<option>2007-08</option>
+				</select></p>
+				<input type="submit" value="切换到该考核月份" /> </div>
+			<div>
+				<table class="list">
+					<thead>
+						<tr>
+							<th>常规任务大类</th>
+							<th>标题</th>
+							<th>年任务计划量</th>
+							<th>月任务计划量</th>
+							<th>实际完成量</th>
+							<th>耗时</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="6"><a href="#">上一页</a><a href="#">下一页</a></td>
+						</tr>
+					</tfoot>
 					<tr>
-						<th>警员</th>
-						<th>考核月份</th>
-						<th>不参加原因</th>
-						<th></th>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
 					</tr>
-				</thead>
-				<tfoot>
 					<tr>
-						<td colspan="4"><a href="#">上一页</a><a href="#">下一页</a></td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
 					</tr>
-				</tfoot>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-				<tr>
-					<td>######</td>
-					<td>#########</td>
-					<td>######################</td>
-					<td><input type="submit" value="修改" /><input type="submit" value="删除" /></td>
-				</tr>
-			</table>
-			<table class="form" style="margin-top: 1em; width: 100%">
-				<tfoot>
 					<tr>
-						<td colspan="2"><input type="submit" value="新增" /><input type="reset" value="重置" /></td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
 					</tr>
-				</tfoot>
-				<tr>
-					<th>警员</th>
-					<td><select>
-					<option>#####</option>
-					<option>#####</option>
-					<option>#####</option>
-					<option>#####</option>
-					<option>#####</option>
-					</select></td>
-				</tr>
-				<tr>
-					<th>考核月份</th>
-					<td><input type="text" /></td>
-				</tr>
-				<tr>
-					<th>不参加原因</th>
-					<td><textarea></textarea></td>
-				</tr>
-			</table>
+					<tr>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td>#######</td>
+						<td><input type="text" /></td>
+					</tr>
+				</table>
+			</div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>
 	</div>

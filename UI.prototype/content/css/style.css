@@ -22,7 +22,7 @@ a:hover {
 #container {
 	background-image: url('../images/sidebarBg.gif');
 	background-repeat: repeat-y;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 }
 #masthead {
@@ -107,6 +107,7 @@ a:hover {
 	height: 20px;
 	line-height: 20px;
 	text-indent: 1em;
+	border-top:solid 1px #FFF;
 }
 #sidebar li li a.current {
 	background: #66FF66;
@@ -153,11 +154,13 @@ table.list {
 	width: 100%;
 }
 table.list th {
-	border: 1px solid #828282;
-	background-color: #BCBCBC;
+	border: 1px solid #e2e2e2;
+	border-bottom-color: #b5b5b5;
+	border-right-color: #b5b5b5;
+	color: #3f3f3f;
+	background: #e2e2e2;
 	text-align: left;
 	text-indent: 0.3em;
-	color: #333333;
 	height: 1.5em;
 	line-height: 1.5em;
 }
@@ -173,14 +176,20 @@ table.list tfoot td {
 	height: 20px;
 	line-height: 20px;
 }
-table.list tr.altRow{
+table.list tr.altRow {
 	background: #DFE7F2;
+}
+table.list tbody a{
+	margin:0 0.5em;	
 }
 /* Other Styles */
 .bottomBar {
 	height: 24px;
 	line-height: 24px;
 	text-align: right;
+}
+.bottomBar a{
+	margin:0 0.5em;
 }
 /* Styles for topBar */
 .topBar {
@@ -232,6 +241,7 @@ fieldset.summary dd {
 * > #subcontent {
 	display: block;
 }
+/* Styles for split layout */
 .split {
 	overflow: auto;
 }

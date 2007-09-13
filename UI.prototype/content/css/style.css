@@ -149,26 +149,32 @@ table.form tfoot td {
 }
 /* Styles for list */
 table.list {
-	border: 1px solid #C0C0C0;
 	border-collapse: collapse;
 	width: 100%;
 }
-table.list th, table.list td {
-	border: 1px solid #C0C0C0;
-	border-style: solid none;
-	text-indent: 12px;
-}
 table.list th {
-	font-weight: normal;
-	height: 30px;
-	line-height: 30px;
+	border: 1px solid #828282;
+	background-color: #BCBCBC;
 	text-align: left;
-	background-color: #EBEBEB;
+	text-indent: 0.3em;
+	color: #333333;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+table.list td {
+	border: 1px solid #D6DDE6;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 1em;
 }
 table.list tfoot td {
+	border: none;
 	text-align: right;
 	height: 20px;
 	line-height: 20px;
+}
+table.list tr.altRow{
+	background: #DFE7F2;
 }
 /* Other Styles */
 .bottomBar {
@@ -177,17 +183,17 @@ table.list tfoot td {
 	text-align: right;
 }
 /* Styles for topBar */
-.topBar{
-	padding-bottom:0.5em;
-	margin-bottom:0.5em;
-	border-bottom:solid 1px gray;
+.topBar {
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom: solid 1px gray;
 }
-.topBar p{
-	margin:0;
-	float:left;	
+.topBar p {
+	margin: 0;
+	float: left;
 }
-.topBar label{
-	margin:0 1em;
+.topBar label {
+	margin: 0 1em;
 }
 /* Styles for summary */
 fieldset.summary dt, fieldset.summary dd {
@@ -197,7 +203,7 @@ fieldset.summary dt, fieldset.summary dd {
 	margin: 0;
 	padding: 0;
 	width: 50%;
-	border-bottom:solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
 }
 fieldset.summary dt {
 	clear: left;
@@ -237,6 +243,6 @@ fieldset.summary dd {
 	margin-left: 160px;
 	display: inline-block;
 }
-* > .split .right{
+* > .split .right {
 	display: block;
 }

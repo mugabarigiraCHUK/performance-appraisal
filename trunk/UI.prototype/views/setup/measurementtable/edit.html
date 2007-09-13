@@ -15,7 +15,8 @@
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
-<script type="text/javascript" src="../../../content/scripts/stripyTables.js"></script>
+<script type="text/javascript" src="../../../content/scripts/table.js"></script>
+<script type="text/javascript" src="../../../content/scripts/menu.js"></script>
 <script type="text/javascript" src="../../../content/libraries/silverStripe/tree/tree.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/yahoo/yahoo-min.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
@@ -23,26 +24,9 @@
 <script type="text/javascript" src="../../../content/libraries/yui/tabview/tabview-min.js"></script>
 <!-- TODO clean head section -->
 <!--
-<link rel="stylesheet" type="text/css" href="content/libraries/jquery/tab/jquery.tabs.css" />
-<script type="text/javascript" src="content/libraries/jquery/tab/jquery.tabs.pack.js"></script>
 <script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
 <script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
-<script type="text/javascript" src="content/libraries/yui/event/event-min.js"></script>
-<script type="text/javascript" src="content/libraries/yui/treeview/treeview-min.js"></script>
 -->
-<!-- TODO move this into another file -->
-<script type="text/javascript">
-$j(document).ready(function(){
-	$j("ul.menu").Accordion({ 
-	    active: '.selected', 
-	    header: '.head', 
-	    navigation: true, 
-	    event: 'click', 
-	    autoheight: true, 
-	    animated: false
-	});
-});
-</script>
 </head>
 
 <body>
@@ -66,8 +50,7 @@ $j(document).ready(function(){
 					<li><a href="../user/index.html">用户管理</a></li>
 					<li><a href="../permission/index.html">权限管理</a></li>
 					<li><a href="../examinationStandard/index.html">考核标准管理</a></li>
-					<li>
-					<a href="../table/index.html" style="color: red">表单定义</a></li>
+					<li><a href="../table/index.html">表单定义</a></li>
 					<li><a href="../routineTask/index.html">系统常规任务定义</a></li>
 					<li><a href="index.html">系统量表定义</a></li>
 					<li><a href="../taskEvalStandard/index.html">任务评估标准</a></li>
@@ -144,14 +127,20 @@ $j(document).ready(function(){
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">统计分析</a><ul>
-					<li><a href="#">警员考核查询分析</a></li>
-					<li><a href="#">部门考核统计分析</a></li>
-					<li><a href="#">工作量查询分析</a></li>
-					<li><a href="#">全局KPI指标统计分析</a></li>
-					<li><a href="#">部门KPI指标统计分析</a></li>
-					<li><a href="#">警员发展指数分析</a></li>
-					<li><a href="#">部门发展指数分析</a></li>
-					<li><a href="#">情报统计分析</a></li>
+					<li><a href="../../statistics/individualExam/index.html">警员考核查询分析</a></li>
+					<li><a href="../../statistics/departmentExam/index.html">部门考核统计分析</a></li>
+					<li><a href="../../statistics/workload/index.html">工作量查询分析</a></li>
+					<li><a href="../../statistics/globalKpi/index.html">全局KPI指标统计分析</a></li>
+					<li><a href="../../statistics/departmentKpi/index.html">部门KPI指标统计分析</a></li>
+					<li>
+					<a href="../../statistics/individualDevelopmentIndex/index.html">
+					警员发展指数分析</a></li>
+					<li>
+					<a href="../../statistics/departDevelopmentIndex/index.html">
+					部门发展指数分析</a></li>
+					<li>
+					<a href="../../statistics/information/index.html" style="color: red">
+					情报统计分析</a></li>
 				</ul>
 				</li>
 			</ul>

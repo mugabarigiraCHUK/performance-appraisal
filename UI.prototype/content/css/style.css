@@ -197,6 +197,7 @@ fieldset.summary dt, fieldset.summary dd {
 	margin: 0;
 	padding: 0;
 	width: 50%;
+	border-bottom:solid 1px #CCCCCC;
 }
 fieldset.summary dt {
 	clear: left;

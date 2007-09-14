@@ -62,7 +62,12 @@ a:hover {
 	margin: 0;
 	margin-right: 1%;
 }
-#masthead .logout {
+#masthead #greeting{
+	position:absolute;
+	right:1em;
+	bottom:2em;
+}
+#masthead #logout {
 	position: absolute;
 	right: 1em;
 	bottom: 0.5em;

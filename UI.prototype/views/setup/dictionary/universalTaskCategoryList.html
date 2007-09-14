@@ -22,11 +22,6 @@
 <script type="text/javascript" src="../../../content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/element/element-beta-min.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/tabview/tabview-min.js"></script>
-<!-- TODO clean head section -->
-<!--
-<script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
-<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
--->
 </head>
 
 <body>
@@ -148,7 +143,8 @@
 		<!-- End Sidebar -->
 		<!-- Begin Content -->
 		<div id="content">
-			<div id="submenu">
+			<div id="subNav" class="split">
+			<div class="left">
 				<ul>
 					<li><a href="routineTaskCategoryList.html">常规任务大类</a></li>
 					<li><a href="universalTaskCategoryList.html">通用任务大类</a></li>
@@ -162,7 +158,7 @@
 					<li><a href="kpiIndexList.html">KPI指标</a></li>
 				</ul>
 			</div>
-			<div id="subcontent">
+			<div class="right">
 				<!-- #BeginEditable "subcontent" -->
 				<table class="list">
 					<caption>通用任务大类</caption>
@@ -201,7 +197,7 @@
 				</table>
 				<div class="bottomBar">
 					<label>名称</label><input type="text" /><input type="submit" value="新增" /></div>
-				<!-- #EndEditable --></div>
+				<!-- #EndEditable --></div></div>
 			<!-- End Content --></div>
 	</div>
 	<!-- End Page Content -->

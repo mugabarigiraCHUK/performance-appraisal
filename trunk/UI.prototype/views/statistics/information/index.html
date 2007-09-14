@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- #BeginEditable "doctitle" -->
-<title>动态任务</title>
+<title>情报统计分析</title>
 <!-- #EndEditable -->
 <link href="../../../content/css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="../../../content/libraries/jquery/accordion/css.css" />
@@ -100,19 +100,19 @@
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">警员日常工作</a><ul>
-					<li><a href="../routineTask/index.html">常规任务</a></li>
-					<li><a href="index.html">动态任务</a></li>
-					<li><a href="../keyEvent/index.html">关键事件</a></li>
-					<li><a href="../individualQuality/index.html">
+					<li><a href="../../policeDuty/routineTask/index.html">常规任务</a></li>
+					<li><a href="../../policeDuty/dynamicTask/index.html">动态任务</a></li>
+					<li><a href="../../policeDuty/keyEvent/index.html">关键事件</a></li>
+					<li><a href="../../policeDuty/individualQuality/index.html">
 					个人素质</a></li>
-					<li><a href="../overtimeWork/index.html">警员加班</a></li>
-					<li><a href="../absence/index.html">警员离岗</a></li>
-					<li><a href="../mutualReview/index.html">互评</a></li>
-					<li><a href="../weeklySumUp/index.html">周小结</a></li>
-					<li><a href="../examQuery/index.html">个考查询</a></li>
-					<li><a href="../instructionQuery/index.html">指导查询</a></li>
+					<li><a href="../../policeDuty/overtimeWork/index.html">警员加班</a></li>
+					<li><a href="../../policeDuty/absence/index.html">警员离岗</a></li>
+					<li><a href="../../policeDuty/mutualReview/index.html">互评</a></li>
+					<li><a href="../../policeDuty/weeklySumUp/index.html">周小结</a></li>
+					<li><a href="../../policeDuty/examQuery/index.html">个考查询</a></li>
+					<li><a href="../../policeDuty/instructionQuery/index.html">指导查询</a></li>
 					<li><a href="#" style="color: red">日清查询</a></li>
-					<li><a href="../appeal/index.html">警员申诉</a></li>
+					<li><a href="../../policeDuty/appeal/index.html">警员申诉</a></li>
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">情报处理</a><ul>
@@ -124,19 +124,19 @@
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">统计分析</a><ul>
-					<li><a href="../../statistics/individualExam/index.html">警员考核查询分析</a></li>
-					<li><a href="../../statistics/departmentExam/index.html">部门考核统计分析</a></li>
-					<li><a href="../../statistics/workload/index.html">工作量查询分析</a></li>
-					<li><a href="../../statistics/globalKpi/index.html">全局KPI指标统计分析</a></li>
-					<li><a href="../../statistics/departmentKpi/index.html">部门KPI指标统计分析</a></li>
+					<li><a href="../individualExam/index.html">警员考核查询分析</a></li>
+					<li><a href="../departmentExam/index.html">部门考核统计分析</a></li>
+					<li><a href="../workload/index.html">工作量查询分析</a></li>
+					<li><a href="../globalKpi/index.html">全局KPI指标统计分析</a></li>
+					<li><a href="../departmentKpi/index.html">部门KPI指标统计分析</a></li>
 					<li>
-					<a href="../../statistics/individualDevelopmentIndex/index.html">
+					<a href="../individualDevelopmentIndex/index.html">
 					警员发展指数分析</a></li>
 					<li>
-					<a href="../../statistics/departDevelopmentIndex/index.html">
+					<a href="../departDevelopmentIndex/index.html">
 					部门发展指数分析</a></li>
 					<li>
-					<a href="../../statistics/information/index.html">
+					<a href="index.html">
 					情报统计分析</a></li>
 				</ul>
 				</li>
@@ -146,21 +146,144 @@
 		<!-- Begin Content -->
 		<div id="content" class="right">
 			<!-- #BeginEditable "content" -->
-			<table class="form" width="100%">
-				<tfoot>
-					<tr>
-						<td colspan="2"><input type="submit" value="保存" /><input type="reset" value="重置" /></td>
-					</tr>
-				</tfoot>
-				<tr><th>动态任务项</th><td>#######</td></tr>
-				<tr><th>任务描述</th><td>#######</td></tr>
-				<tr><th>年任务计划量</th><td>#######</td></tr>
-				<tr><th>月任务计划量</th><td>######</td></tr>
-				<tr><th>任务等级</th><td>######</td></tr>
-				<tr><th>实际完成量</th><td><input type="text" /></td></tr>
-				<tr><th>完成说明</th><td><textarea></textarea></td></tr>
-				<tr><th>耗时</th><td><input type="text" /></td></tr>
-			</table>
+			<div class="split">
+				<div class="left">
+					<ul class="tree">
+						<li>市局<ul>
+							<li>国保科</li>
+							<li>治安科</li>
+							<li>法制科</li>
+							<li>刑警队</li>
+							<li>执法大队</li>
+							<li>
+							<a href="#" onclick="return false;" class="current">
+							镜湖区分局</a><ul>
+								<li>国保科</li>
+								<li>治安科</li>
+								<li>北门派出所</li>
+								<li>北京路派出所</li>
+							</ul>
+							</li>
+							<li>三山区分局</li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="topBar">
+						<p><label>考核月份</label><select>
+						<option>2007-10</option>
+						<option>2007-09</option>
+						<option>2007-08</option>
+						</select></p>
+						<p><label>情报来源</label><select>
+						<option>########</option>
+						<option>########</option>
+						<option>########</option>
+						<option>########</option>
+						</select></p>
+						<input type="submit" value="查询" /></div>
+					<table class="list">
+						<thead>
+							<tr>
+								<th>部门</th>
+								<th>考核月份</th>
+								<th>特情</th>
+								<th>耳目</th>
+								<th>信息员</th>
+								<th>群众反映</th>
+								<th>其他</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="7"><a href="#">上一页</a><a href="#">下一页</a></td>
+							</tr>
+						</tfoot>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+						<tr>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+							<td>########</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>
 	</div>

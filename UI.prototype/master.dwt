@@ -29,7 +29,8 @@
 	<!-- Begin Masthead -->
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
-		<div class="logout">
+		<div id="greeting">当前登录民警：####</div>
+		<div id="logout">
 			<a href="#" onclick="return false">退出</a></div>
 	</div>
 	<!-- End Masthead -->
@@ -78,6 +79,7 @@
 				<li><a href="#" onclick="return false;" class="head">任务分派</a><ul>
 					<li><a href="views/taskAllocation/routineTask/index.html">常规任务分派</a></li>
 					<li><a href="views/taskAllocation/dynamicTask/index.html">动态任务分派</a></li>
+					<li><a href="views/taskAllocation/appealQuery/index.html">申诉查询</a></li>
 				</ul>
 				</li>
 				<li><a href="#" onclick="return false;" class="head">考核管理</a><ul>

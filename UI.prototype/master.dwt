@@ -134,7 +134,7 @@
 					<a href="views/statistics/departDevelopmentIndex/index.html">
 					部门发展指数分析</a></li>
 					<li>
-					<a href="views/statistics/information/index.html" style="color: red">
+					<a href="views/statistics/information/index.html">
 					情报统计分析</a></li>
 				</ul>
 				</li>

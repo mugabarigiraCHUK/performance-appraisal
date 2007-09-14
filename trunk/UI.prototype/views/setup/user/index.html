@@ -22,11 +22,6 @@
 <script type="text/javascript" src="../../../content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/element/element-beta-min.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/tabview/tabview-min.js"></script>
-<!-- TODO clean head section -->
-<!--
-<script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
-<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
--->
 </head>
 
 <body>
@@ -149,89 +144,84 @@
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-			<style type="text/css">
-#organTree {
-	float: left;
-	width: 200px;
-}
-#userList {
-	margin-left: 200px;
-	display: inline-block;/* hack for IE6 */
-}
-* > #userList{
-	display: block;
-}
-</style>
-			<div id="organTree">
-				<ul class="tree">
-					<li>市局<ul>
-						<li>国保科</li>
-						<li>治安科</li>
-						<li>法制科</li>
-						<li>刑警队</li>
-						<li>执法大队</li>
-						<li><a href="#" onclick="return false;" class="current">
-						镜湖区分局</a><ul>
+			<div class="split">
+				<div class="left">
+					<ul class="tree">
+						<li>市局<ul>
 							<li>国保科</li>
 							<li>治安科</li>
-							<li>北门派出所</li>
-							<li>北京路派出所</li>
+							<li>法制科</li>
+							<li>刑警队</li>
+							<li>执法大队</li>
+							<li>
+							<a href="#" onclick="return false;" class="current">
+							镜湖区分局</a><ul>
+								<li>国保科</li>
+								<li>治安科</li>
+								<li>北门派出所</li>
+								<li>北京路派出所</li>
+							</ul>
+							</li>
+							<li>三山区分局</li>
 						</ul>
 						</li>
-						<li>三山区分局</li>
 					</ul>
-					</li>
-				</ul>
-			</div>
-			<div id="userList">
-				<table class="list">
-					<caption>机构用户列表</caption>
-					<thead>
+				</div>
+				<div class="right">
+					<table class="list">
+						<caption>机构用户列表</caption>
+						<thead>
+							<tr>
+								<th>登陆代码</th>
+								<th>姓名</th>
+								<th>岗位角色</th>
+								<th>环境权重</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="5">
+								<a href="#" onclick="return false;">上一页 </a>
+								<a href="#" onclick="return false;">下一页</a></td>
+							</tr>
+						</tfoot>
 						<tr>
-							<th>登陆代码</th>
-							<th>姓名</th>
-							<th>岗位角色</th>
-							<th>环境权重</th>
-							<th></th>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>
+							<input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
 						</tr>
-					</thead>
-					<tfoot>
 						<tr>
-							<td colspan="5"><a href="#" onclick="return false;">
-							上一页 </a><a href="#" onclick="return false;">下一页</a></td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>
+							<input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
 						</tr>
-					</tfoot>
-					<tr>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
-					</tr>
-					<tr>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
-					</tr>
-					<tr>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
-					</tr>
-					<tr>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td>#####</td>
-						<td><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
-					</tr>
-				</table>
-				<div class="bottomBar">
-					<a href="edit.html">新增</a></div>
+						<tr>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>
+							<input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+						</tr>
+						<tr>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>#####</td>
+							<td>
+							<input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" /></td>
+						</tr>
+					</table>
+					<div class="bottomBar">
+						<a href="edit.html">新增</a></div>
+				</div>
 			</div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>

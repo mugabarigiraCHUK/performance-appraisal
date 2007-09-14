@@ -22,11 +22,6 @@
 <script type="text/javascript" src="../../../content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/element/element-beta-min.js"></script>
 <script type="text/javascript" src="../../../content/libraries/yui/tabview/tabview-min.js"></script>
-<!-- TODO clean head section -->
-<!--
-<script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
-<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
--->
 </head>
 
 <body>
@@ -149,78 +144,66 @@
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-			<!-- put here just for convenience -->
-			<!-- TODO move css definitions into another file -->
-			<style type="text/css">
-#organTree {
-	float: left;
-	width: 200px;
-}
-#organForm {
-	margin-left: 200px;
-	display: inline-block;/* hack for IE6 */
-}
-* > #organForm{
-	display: block;
-}
-</style>
-			<div id="organTree">
-				<ul class="tree">
-					<li>市局<ul>
-						<li>国保科</li>
-						<li>治安科</li>
-						<li>法制科</li>
-						<li>刑警队</li>
-						<li>执法大队</li>
-						<li><a href="#" onclick="return false;" class="current">
-						镜湖区分局</a><ul>
+			<div class="split">
+				<div class="left">
+					<ul class="tree">
+						<li>市局<ul>
 							<li>国保科</li>
 							<li>治安科</li>
-							<li>北门派出所</li>
-							<li>北京路派出所</li>
+							<li>法制科</li>
+							<li>刑警队</li>
+							<li>执法大队</li>
+							<li>
+							<a href="#" onclick="return false;" class="current">
+							镜湖区分局</a><ul>
+								<li>国保科</li>
+								<li>治安科</li>
+								<li>北门派出所</li>
+								<li>北京路派出所</li>
+							</ul>
+							</li>
+							<li>三山区分局</li>
 						</ul>
 						</li>
-						<li>三山区分局</li>
 					</ul>
-					</li>
-				</ul>
-			</div>
-			<div id="organForm">
-				<div class="bottomBar">
-					<input name="Submit1" type="submit" value="新增" /><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" />
 				</div>
-				<table class="form" width="100%">
-					<tr>
-						<th>机构名称</th>
-						<td><input name="Text1" type="text" /></td>
-					</tr>
-					<tr>
-						<th>上级机构代码</th>
-						<td>#########</td>
-					</tr>
-					<tr>
-						<th>机构代码</th>
-						<td><input name="Text1" type="text" /></td>
-					</tr>
-					<tr>
-						<th>申诉部门否</th>
-						<td><input name="Checkbox1" type="checkbox" /></td>
-					</tr>
-					<tr>
-						<th>考核部门否</th>
-						<td><input name="Checkbox1" type="checkbox" /></td>
-					</tr>
-					<tr>
-						<th>描述</th>
-						<td><textarea name="TextArea1" cols="20" rows="2"></textarea></td>
-					</tr>
-					<tfoot>
+				<div class="right">
+					<div class="topBar">
+						<input name="Submit1" type="submit" value="新增" /><input name="Submit1" type="submit" value="修改" /><input name="Submit1" type="submit" value="删除" />
+					</div>
+					<table class="form" width="100%">
 						<tr>
-							<td colspan="2">
-							<input name="Submit1" type="submit" value="保存" /><input name="Reset1" type="reset" value="重置" /></td>
+							<th>机构名称</th>
+							<td><input name="Text1" type="text" /></td>
 						</tr>
-					</tfoot>
-				</table>
+						<tr>
+							<th>上级机构代码</th>
+							<td>#########</td>
+						</tr>
+						<tr>
+							<th>机构代码</th>
+							<td><input name="Text1" type="text" /></td>
+						</tr>
+						<tr>
+							<th>申诉部门否</th>
+							<td><input name="Checkbox1" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<th>考核部门否</th>
+							<td><input name="Checkbox1" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<th>描述</th>
+							<td><textarea name="TextArea1" cols="20" rows="2"></textarea></td>
+						</tr>
+						<tfoot>
+							<tr>
+								<td colspan="2">
+								<input name="Submit1" type="submit" value="保存" /><input name="Reset1" type="reset" value="重置" /></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
 			</div>
 			<!-- #EndEditable -->
 			<!-- End Content --></div>

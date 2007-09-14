@@ -41,11 +41,6 @@ a:hover {
 	float: left;
 	text-indent: 180px;
 }
-#navigation {
-	font-family: 宋体;
-	background-color: #ca7;
-	overflow: auto;
-}
 #page_content {
 	overflow: auto; /*automatically adjust its height based on its float descendants */
 }
@@ -107,7 +102,7 @@ a:hover {
 	height: 20px;
 	line-height: 20px;
 	text-indent: 1em;
-	border-top:solid 1px #FFF;
+	border-top: solid 1px #FFF;
 }
 #sidebar li li a.current {
 	background: #66FF66;
@@ -137,7 +132,7 @@ table.form th, table.form td {
 }
 table.form th {
 	font-weight: normal;
-	background-color: #EBEBEB;
+	background-color: #e2e2e2;
 	padding: 0 12px;
 	width: 35%;
 }
@@ -154,7 +149,7 @@ table.list {
 	width: 100%;
 }
 table.list th {
-	border: 1px solid #e2e2e2;
+	border: 1px solid #D6DDE6;
 	border-bottom-color: #b5b5b5;
 	border-right-color: #b5b5b5;
 	color: #3f3f3f;
@@ -179,8 +174,8 @@ table.list tfoot td {
 table.list tr.altRow {
 	background: #DFE7F2;
 }
-table.list tbody a{
-	margin:0 0.5em;	
+table.list tbody a {
+	margin: 0 0.5em;
 }
 /* Other Styles */
 .bottomBar {
@@ -188,8 +183,8 @@ table.list tbody a{
 	line-height: 24px;
 	text-align: right;
 }
-.bottomBar a{
-	margin:0 0.5em;
+.bottomBar a {
+	margin: 0 0.5em;
 }
 /* Styles for topBar */
 .topBar {
@@ -221,30 +216,22 @@ fieldset.summary dd {
 	text-align: right;
 }
 /* Styles for submenu and subcontent */
-#submenu {
+#subNav .left {
 	width: 180px;
-	float: left;
 }
-#submenu ul {
+#subNav .left ul {
 	margin: 0;
 	padding: 0;
 	list-style-position: inside;
 	list-style-type: circle;
 }
-#submenu a {
+#subNav .left ul a {
 	text-decoration: none;
 }
-#subcontent {
+#subNav .right {
 	margin-left: 200px;
-	display: inline-block;
-}
-* > #subcontent {
-	display: block;
 }
 /* Styles for split layout */
-.split {
-	overflow: auto;
-}
 .split .left {
 	float: left;
 	width: 150px;

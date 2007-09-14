@@ -20,11 +20,6 @@
 <script type="text/javascript" src="content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script type="text/javascript" src="content/libraries/yui/element/element-beta-min.js"></script>
 <script type="text/javascript" src="content/libraries/yui/tabview/tabview-min.js"></script>
-<!-- TODO clean head section -->
-<!--
-<script type="text/javascript" src="content/libraries/jquery/treeview/jquery.treeview.pack.js"></script>
-<script type="text/javascript" src="content/libraries/prototype/prototype.js"></script>
--->
 </head>
 
 <body>

@@ -11,6 +11,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+table caption {
+	display: none;
+}
 legend {
 	color: #0046d5;
 }
@@ -23,18 +26,17 @@ a:hover {
 	text-decoration: underline;
 }
 #container {
-	background-image: url('../images/blue/bg.jpg');
-	background-position: left 94px;
-	background-repeat: repeat-x;
-	width: 1000px;
+	width: 994px;
 	margin: 0 auto;
+	background-image: url('../images/blue/sep.gif');
+	background-repeat: repeat-y;
+	background-position: 199px 50%;
 }
 #masthead {
-	width: 100%;
 	height: 122px;
 	overflow: auto; /*automatically adjust its height based on its float descendants */;
 	background-color: #c5d5e5;
-	background-image: url('../images/blue/headbg.jpg');
+	background-image: url('../images/blue/headbg.gif');
 	background-repeat: repeat-x;
 	position: relative;
 }
@@ -43,16 +45,14 @@ a:hover {
 	float: left;
 	text-indent: -2000px;
 }
-#page_content {
+#majorpart {
 	overflow: auto; /*automatically adjust its height based on its float descendants */
 }
 #footer {
-	width: 998px;
 	height: 30px;
-	margin: 0 1px;
 	clear: both;
 	overflow: hidden;
-	background-image: url('../images/blue/footbg.jpg');
+	background-image: url('../images/blue/footbg.gif');
 	background-repeat: no-repeat;
 }
 #masthead img {
@@ -69,16 +69,40 @@ a:hover {
 	bottom: 0.5em;
 }
 #greeting {
-	width: 187px;
 	height: 93px;
 	background-image: url('../images/blue/badge.jpg');
 	background-repeat: no-repeat;
 	position: relative;
 	color: #676767;
 }
-#greeting p{
-	margin:0;
-	padding:0;
+#logout {
+	position: absolute;
+	left: 118px;
+	top: 66px;
+}
+/* Styles for majorpart layout*/
+/*Cuz IE has some problems with using multiple class selector, I have to use id selector to specify the split layout*/
+#sidebar {
+	width: 187px;
+	padding: 6px 6px 0 6px;
+}
+#content {
+	margin-left: 202px; /* To fix IE bug */;
+	padding: 6px;
+}
+* > #content {
+	margin-left: 205px;
+}
+/* Style for shade */
+.shade {
+	background-image: url('../images/blue/bg.jpg');
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+/* Styles for greeting */
+#greeting p {
+	margin: 0;
+	padding: 0;
 }
 #currentUser {
 	position: absolute;
@@ -91,19 +115,15 @@ a:hover {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
-#logout {
-	position: absolute;
-	left: 118px;
-	top: 66px;
-}
-/* Styles for page_content layout */
-#page_content .left {
-	width: 187px;
-	padding: 6px 0 0 6px;
-}
-#page_content .right {
-	margin-left: 193px;
-	padding: 10px;
+/* Styles for Footer */
+#footer p {
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	color: #414a56;
+	font-size: x-small;
+	text-align: left;
+	text-indent: 25px;
 }
 /* Styles for Siderbar Navigation */
 #sidebar li {
@@ -147,16 +167,7 @@ a:hover {
 	text-indent: 38px;
 }
 #sidebar li li a.current {
-	background-image: url(../images/blue/selectedmi.jpg);
-}
-/* Styles for Footer */
-#footer p {
-	color: #414a56;
-	font-size: x-small;
-	text-align: left;
-	text-indent: 25px;
-	height: 30px;
-	line-height: 30px;
+	background-image: url(../images/blue/selectedmi.gif);
 }
 /* Styles for form */
 table.form {
@@ -164,12 +175,12 @@ table.form {
 	border-collapse: collapse;
 }
 table.form th, table.form td {
-	border: 1px solid #C0C0C0;
+	border: 1px solid #cfdced;
 	border-style: solid none;
 }
 table.form th {
-	font-weight: normal;
-	background-color: #e2e2e2;
+	color: #053f97;
+	background-color: #deeafb;
 	padding: 0 12px;
 	width: 35%;
 }
@@ -184,37 +195,38 @@ table.form tfoot td {
 table.list {
 	border-collapse: collapse;
 	width: 100%;
+	background-color: white;
 }
 table.list th {
-	border: 1px solid #D6DDE6;
-	border-bottom-color: #b5b5b5;
-	border-right-color: #b5b5b5;
-	color: #3f3f3f;
-	background: #e2e2e2;
+	border: 1px solid #71a4ce;
+	color: #053f97;
 	text-align: left;
-	text-indent: 0.3em;
-	height: 1.5em;
-	line-height: 1.5em;
+	text-indent: 2px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url('../images/blue/thbg.gif');
+	background-repeat: repeat-x;
+	background-position: left 50%;
 }
 table.list td {
-	border: 1px solid #D6DDE6;
-	height: 24px;
-	line-height: 24px;
+	border: 1px solid #cfdced;
+	height: 28px;
+	line-height: 28px;
 	text-indent: 1em;
 }
 table.list tfoot td {
 	border: none;
 	text-align: right;
-	height: 20px;
-	line-height: 20px;
+	height: 32px;
+	line-height: 32px;
 }
 table.list tr.altRow {
-	background: #DFE7F2;
+	background: #e4e6e9;
 }
 table.list tbody a {
 	margin: 0 0.5em;
 }
-/* Other Styles */
+/* Styles for bottomBar */
 .bottomBar {
 	height: 24px;
 	line-height: 24px;
@@ -237,6 +249,9 @@ table.list tbody a {
 	margin: 0 1em;
 }
 /* Styles for summary */
+fieldset.summary {
+	padding: 4px;
+}
 fieldset.summary dt, fieldset.summary dd {
 	height: 20px;
 	line-height: 20px;
@@ -279,4 +294,45 @@ fieldset.summary dd {
 }
 * > .split .right {
 	display: block;
+}
+/* Styles for btn */
+.btn {
+	background-color: #FFFFFF;
+	background-image: url('../images/Blue/btnbg.gif');
+	background-repeat: repeat-x;
+	background-position: left 50%;
+	height: 23px;
+	line-height: 23px;
+	border: solid 1px #c8c8c8;
+	color: #222222;
+	font-size: 12px;
+	padding: 0 2px;
+	text-align: center;
+	text-indent: 0;
+	margin: 0 2px;
+	cursor: pointer;
+}
+a.btn {
+	display: inline-block;
+	padding: 0 8px;
+	text-decoration: none;
+}
+a.btn:hover {
+	text-decoration: none;
+	color: #222222;
+}
+* > a.btn {
+	padding: 3px 8px;
+}
+/* Styles for treeContainer */
+fieldset.treeContainer {
+	margin: 0;
+	padding: 6px 3px;
+}
+/* Styles for split inside yui tabview*/
+#majorpart .yui-content .left {
+	width: 150px;
+}
+#majorpart .yui-content .right {
+	margin-left: 156px;
 }

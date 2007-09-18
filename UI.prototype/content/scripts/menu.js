@@ -5,6 +5,7 @@ $j(document).ready(function(){
 		    navigation: true, 
 		    event: 'click', 
 		    autoheight: true, 
-		    animated: false
+		    animated: false,
+		    alwaysOpen: false
 	});
 });

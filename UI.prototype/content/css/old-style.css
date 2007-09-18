@@ -1,4 +1,4 @@
-﻿@import url(../libraries/jquery/accordion/css.css);
+@import url(../libraries/jquery/accordion/css.css);
 @import url(../libraries/silverStripe/tree/tree.css);
 @import url(../libraries/yui/tabview/assets/skins/sam/tabview.css);
 html {
@@ -44,7 +44,7 @@ a:hover {
 	float: left;
 	text-indent: 180px;
 }
-#page_content {
+#majorpart {
 	overflow: auto; /*automatically adjust its height based on its float descendants */
 }
 #footer {
@@ -75,11 +75,11 @@ a:hover {
 	right: 1em;
 	bottom: 0.5em;
 }
-/* Styles for page_content layout */
-#page_content .left {
+/* Styles for majorpart layout */
+#majorpart .left {
 	width: 150px;
 }
-#page_content .right {
+#majorpart .right {
 	margin-left: 150px;
 	padding: 10px;
 }

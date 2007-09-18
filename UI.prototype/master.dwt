@@ -7,9 +7,6 @@
 <title>芜湖市公安局绩效管理系统</title>
 <!-- #EndEditable -->
 <link href="content/css/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="content/libraries/jquery/accordion/css.css" />
-<link href="content/libraries/silverStripe/tree/tree.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="content/libraries/yui/tabview/assets/skins/sam/tabview.css" />
 <script type="text/javascript" src="content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="content/libraries/jquery/jquery.prototype.noconflict.js"></script>
 <script type="text/javascript" src="content/libraries/jquery/accordion/jquery.accordion.js"></script>
@@ -29,18 +26,18 @@
 	<!-- Begin Masthead -->
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
-		<div id="greeting">
-			当前登录民警：####</div>
-		<div id="logout">
-			<a href="#" onclick="return false">退出</a></div>
 	</div>
 	<!-- End Masthead -->
 	<!-- Begin Page Content -->
 	<div id="page_content" class="split">
 		<!-- Begin Sidebar -->
 		<div id="sidebar" class="left">
+			<div id="greeting">
+				<p id="currentUser"><em>当前登录民警</em>刘万三 同志</p>
+				<p id="logout"><a href="#" onclick="return false">注销</a></p>
+			</div>
 			<ul class="menu">
-				<li><a href="#" onclick="return false;" class="head selected">系统维护</a><ul>
+				<li><a href="#" onclick="return false;" class="head">系统维护</a><ul>
 					<li><a href="views/setup/organization/index.html">组织机构管理</a></li>
 					<li><a href="views/setup/user/index.html">用户管理</a></li>
 					<li><a href="views/setup/permission/index.html">权限管理</a></li>
@@ -105,6 +102,7 @@
 					<li><a href="views/policeDuty/dynamicTask/index.html">动态任务</a></li>
 					<li><a href="views/policeDuty/keyEvent/index.html">关键事件</a></li>
 					<li><a href="views/policeDuty/individualQuality/index.html">	个人素质</a></li>-->
+					</li>
 					<li><a href="views/policeDuty/overtimeWork/index.html">警员加班</a></li>
 					<li><a href="views/policeDuty/absence/index.html">警员离岗</a></li>
 					<li><a href="views/policeDuty/mutualReview/index.html">互评</a></li>

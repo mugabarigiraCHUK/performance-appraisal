@@ -14,6 +14,7 @@
 <script type="text/javascript" src="../../content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
 <script type="text/javascript" src="../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="../../content/libraries/jquery/toggleElements/jquery.toggleElements.js"></script>
 <script type="text/javascript" src="../../content/scripts/beautifier.js"></script>
 <script type="text/javascript" src="../../content/scripts/menu.js"></script>
 <script type="text/javascript" src="../../content/libraries/silverStripe/tree/tree.js"></script>
@@ -31,6 +32,7 @@
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
 	</div>
+	<div id="necklace"></div>
 	<!-- End Masthead -->
 	<!-- Begin Page Content -->
 	<div id="majorpart" class="split">

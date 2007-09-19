@@ -35,18 +35,22 @@ a:hover {
 	background-repeat: repeat-y;
 	background-position: 199px 50%;
 }
+/* overflow: auto; automatically adjust its height based on its float descendants */
 #masthead {
-	height: 122px;
-	overflow: auto; /*automatically adjust its height based on its float descendants */;
-	background-color: #c5d5e5;
-	background-image: url('../images/blue/headbg.gif');
-	background-repeat: repeat-x;
-	position: relative;
+	height: 91px;
+	background-image: url('../images/Blue/headbg.gif');
+	background-repeat: no-repeat;
 }
 #masthead h1 {
 	margin: 0;
 	float: left;
 	text-indent: -2000px;
+}
+#necklace {
+	height: 31px;
+	background-image: url('../images/blue/neckbg.gif');
+	background-repeat: no-repeat;
+	position: relative;
 }
 #majorpart {
 	overflow: auto; /*automatically adjust its height based on its float descendants */
@@ -96,7 +100,7 @@ a:hover {
 * > #content {
 	margin-left: 205px;
 }
-/* Style for shade */
+/* Styles for shade */
 .shade {
 	background-image: url('../images/blue/bg.jpg');
 	background-position: left top;
@@ -174,6 +178,7 @@ a:hover {
 }
 /* Styles for form */
 table.form {
+	background: white;
 	border: 1px solid #C0C0C0;
 	border-collapse: collapse;
 }
@@ -328,10 +333,10 @@ a.btn:hover {
 * > a.btn {
 	padding: 3px 8px;
 }
-/* Styles for treeContainer */
-fieldset.treeContainer {
-	margin: 0;
+/* Styles for box */
+.box {
 	padding: 6px 3px;
+	border: solid 1px #cfdced;
 }
 /* Styles for split inside yui tabview*/
 #majorpart .yui-content .left {
@@ -339,4 +344,20 @@ fieldset.treeContainer {
 }
 #majorpart .yui-content .right {
 	margin-left: 156px;
+}
+/* Styles for necklace */
+#necklace .opened, #necklace .closed {
+	width: 13px;
+	height: 12px;
+	right: 9px;
+	top: 12px;
+	position: absolute;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#necklace .opened {
+	background-image: url('../images/blue/up.gif');
+}
+#necklace .closed {
+	background-image: url('../images/blue/down.gif');
 }

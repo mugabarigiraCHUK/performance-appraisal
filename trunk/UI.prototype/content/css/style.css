@@ -14,6 +14,9 @@ body {
 table caption {
 	display: none;
 }
+td, th {
+	padding: 0;
+}
 legend {
 	color: #0046d5;
 }
@@ -198,15 +201,16 @@ table.list {
 	background-color: white;
 }
 table.list th {
+	padding: 0;
 	border: 1px solid #71a4ce;
-	color: #053f97;
-	text-align: left;
-	text-indent: 2px;
 	height: 28px;
 	line-height: 28px;
+	color: #053f97;
+	text-align: left;
+	text-indent: 3px;
 	background-image: url('../images/blue/thbg.gif');
-	background-repeat: repeat-x;
-	background-position: left 50%;
+	background-repeat: no-repeat;
+	background-position: 1px 50%;
 }
 table.list td {
 	border: 1px solid #cfdced;

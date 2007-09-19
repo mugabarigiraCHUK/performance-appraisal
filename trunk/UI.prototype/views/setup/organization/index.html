@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
 
 <!-- #BeginTemplate "../template.dwt" -->
@@ -12,6 +12,7 @@
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/toggleElements/jquery.toggleElements.js"></script>
 <script type="text/javascript" src="../../../content/scripts/beautifier.js"></script>
 <script type="text/javascript" src="../../../content/scripts/menu.js"></script>
 <script type="text/javascript" src="../../../content/libraries/silverStripe/tree/tree.js"></script>
@@ -29,6 +30,7 @@
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
 	</div>
+	<div id="necklace"></div>
 	<!-- End Masthead -->
 	<!-- Begin Page Content -->
 	<div id="majorpart" class="split">
@@ -140,26 +142,28 @@
 			<!-- #BeginEditable "content" -->
 			<div class="split">
 				<div class="left">
-					<ul class="tree">
-						<li>市局<ul>
-							<li>国保科</li>
-							<li>治安科</li>
-							<li>法制科</li>
-							<li>刑警队</li>
-							<li>执法大队</li>
-							<li>
-							<a href="#" onclick="return false;" class="current">
-							镜湖区分局</a><ul>
+					<div class="box">
+						<ul class="tree">
+							<li>市局<ul>
 								<li>国保科</li>
 								<li>治安科</li>
-								<li>北门派出所</li>
-								<li>北京路派出所</li>
+								<li>法制科</li>
+								<li>刑警队</li>
+								<li>执法大队</li>
+								<li>
+								<a href="#" onclick="return false;" class="current">
+								镜湖区分局</a><ul>
+									<li>国保科</li>
+									<li>治安科</li>
+									<li>北门派出所</li>
+									<li>北京路派出所</li>
+								</ul>
+								</li>
+								<li>三山区分局</li>
 							</ul>
 							</li>
-							<li>三山区分局</li>
 						</ul>
-						</li>
-					</ul>
+					</div>
 				</div>
 				<div class="right">
 					<div class="topBar">

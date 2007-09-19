@@ -14,6 +14,7 @@
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/jquery.prototype.noconflict.js"></script>
 <script type="text/javascript" src="../../../content/libraries/jquery/accordion/jquery.accordion.js"></script>
+<script type="text/javascript" src="../../../content/libraries/jquery/toggleElements/jquery.toggleElements.js"></script>
 <script type="text/javascript" src="../../../content/scripts/beautifier.js"></script>
 <script type="text/javascript" src="../../../content/scripts/menu.js"></script>
 <script type="text/javascript" src="../../../content/libraries/silverStripe/tree/tree.js"></script>
@@ -31,6 +32,7 @@
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
 	</div>
+	<div id="necklace"></div>
 	<!-- End Masthead -->
 	<!-- Begin Page Content -->
 	<div id="majorpart" class="split">
@@ -142,18 +144,20 @@
 			<!-- #ParentBeginEditable "content" -->
 			<div id="subNav" class="split">
 				<div class="left">
-					<ul>
-						<li><a href="routineTaskCategoryList.html">常规任务大类</a></li>
-						<li><a href="universalTaskCategoryList.html">通用任务大类</a></li>
-						<li><a href="dynamicTaskList.html">系统动态任务树定义</a></li>
-						<li><a href="keyEventList.html">系统关键事件项定义</a></li>
-						<li><a href="dynamicTaskLevelList.html">动态任务等级（权重）定义</a></li>
-						<li><a href="agePowerList.html">年龄权重</a></li>
-						<li><a href="informationSourceList.html">情报来源</a></li>
-						<li><a href="reliabilityLevelList.html">来源可靠性等级</a></li>
-						<li><a href="validityLevelList.html">内容有效性等级</a></li>
-						<li><a href="kpiIndexList.html">KPI指标</a></li>
-					</ul>
+					<div class="box">
+						<ul>
+							<li><a href="routineTaskCategoryList.html">常规任务大类</a></li>
+							<li><a href="universalTaskCategoryList.html">通用任务大类</a></li>
+							<li><a href="dynamicTaskList.html">系统动态任务树定义</a></li>
+							<li><a href="keyEventList.html">系统关键事件项定义</a></li>
+							<li><a href="dynamicTaskLevelList.html">动态任务等级（权重）定义</a></li>
+							<li><a href="agePowerList.html">年龄权重</a></li>
+							<li><a href="informationSourceList.html">情报来源</a></li>
+							<li><a href="reliabilityLevelList.html">来源可靠性等级</a></li>
+							<li><a href="validityLevelList.html">内容有效性等级</a></li>
+							<li><a href="kpiIndexList.html">KPI指标</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="right">
 					<!-- #BeginEditable "subcontent" -->put contents here<!-- #EndEditable --></div>

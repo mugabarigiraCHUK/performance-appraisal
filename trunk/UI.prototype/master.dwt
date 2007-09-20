@@ -18,6 +18,7 @@
 <script type="text/javascript" src="content/libraries/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
 <script type="text/javascript" src="content/libraries/yui/element/element-beta-min.js"></script>
 <script type="text/javascript" src="content/libraries/yui/tabview/tabview-min.js"></script>
+<script type="text/javascript" src="content/scripts/nongli.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,8 @@
 	<div id="masthead">
 		<h1>芜湖市公安局绩效考核管理系统</h1>
 	</div>
-	<div id="necklace"></div>
+	<div id="necklace">
+	</div>
 	<!-- End Masthead -->
 	<!-- Begin Page Content -->
 	<div id="majorpart" class="split">

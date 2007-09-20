@@ -13,16 +13,29 @@ var Beautifier = {
 		$j(".bottomBar a").addClass("btn");
 	},	
 	
-	addToggleButtonForMasthead : function(){
+	addToggleForMasthead : function(){
 		$j("<div class='opened'></div>").appendTo("#necklace").toggle(
-			function(){var switcher=$(this); $("#masthead").slideUp("normal",function(){switcher.removeClass("opened");switcher.addClass("closed");});	},
-			function(){var switcher=$(this); $("#masthead").slideDown("normal",function(){switcher.removeClass("closed");switcher.addClass("opened");}); }
+			function(){ var toggle=$j(this); $j("#masthead").slideUp("normal", function(){ toggle.removeClass("opened"); toggle.addClass("closed");}); },
+			function(){ var toggle=$j(this); $j("#masthead").slideDown("normal", function(){ toggle.removeClass("closed"); toggle.addClass("opened");}); }
 		);
+	},
+	
+	addToggleForSidebar : function(){
+		$j("<div class='shown'></div>").appendTo("#necklace").toggle(
+			function(){ $j(this).removeClass("shown").addClass("hidden"); $j("#container").addClass("collapsed"); },
+			function(){ $j(this).removeClass("hidden").addClass("shown"); $j("#container").removeClass("collapsed"); }
+		);
+	},
+	
+	addCalendarIntoNecklace : function(){
+		$j("<div class='calendar'>" + getNongli() +"</div>").appendTo("#necklace");
 	}
 }
 
 $j(document).ready(function(){
 	Beautifier.beautifyTables();
 	Beautifier.beautifyButtons();
-	Beautifier.addToggleButtonForMasthead();	
+	Beautifier.addToggleForMasthead();
+	Beautifier.addToggleForSidebar();
+	Beautifier.addCalendarIntoNecklace();
 });

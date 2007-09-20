@@ -34,6 +34,7 @@ a:hover {
 	background-image: url('../images/blue/sep.gif');
 	background-repeat: repeat-y;
 	background-position: 199px 50%;
+	position: relative;
 }
 /* overflow: auto; automatically adjust its height based on its float descendants */
 #masthead {
@@ -99,6 +100,16 @@ a:hover {
 }
 * > #content {
 	margin-left: 205px;
+}
+/* Styles for sidebar-collapsed layout */
+.collapsed #sidebar {
+	display: none;
+}
+.collapsed #content {
+	margin-left: 0;
+}
+#container.collapsed {
+	background-image: none;
 }
 /* Styles for shade */
 .shade {
@@ -345,7 +356,7 @@ a.btn:hover {
 #majorpart .yui-content .right {
 	margin-left: 156px;
 }
-/* Styles for necklace */
+/* Styles for toggle */
 #necklace .opened, #necklace .closed {
 	width: 13px;
 	height: 12px;
@@ -360,4 +371,27 @@ a.btn:hover {
 }
 #necklace .closed {
 	background-image: url('../images/blue/down.gif');
+}
+#necklace .shown, #necklace .hidden {
+	width: 12px;
+	height: 13px;
+	top: 11px;
+	position: absolute;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#necklace .shown {
+	left: 196px;
+	background-image: url('../images/blue/left.gif');
+}
+#necklace .hidden {
+	left: 9px;
+	background-image: url('../images/blue/right.gif');
+}
+/* Styles for calendar in necklace */
+#necklace .calendar {
+	height: 31px;
+	line-height: 35px;
+	text-indent: 35px;
+	overflow: hidden;
 }

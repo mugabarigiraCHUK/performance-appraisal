@@ -341,8 +341,12 @@ a.btn:hover {
 	text-decoration: none;
 	color: #222222;
 }
-* > a.btn {
+* > a.btn /* Firefox Opera etc */{
 	padding: 3px 8px;
+	display: inline;
+}
+*:first-child+html a.btn /* IE7 Only */{
+	padding: 0px 8px;
 }
 /* Styles for box */
 .box {
